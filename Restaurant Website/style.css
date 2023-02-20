@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo_container img{
+    height: 75px;
+    width: 150px;
+    
+}
+
+.bars img{
+    height: 30px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+.bars{
+    font-size: 5px;
+}
+
+html,body{
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation */
+
+nav{
+   box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.1);
+   position: sticky;
+   top: 0;
+   margin-bottom: 32px;
+   background-color: white;
+   z-index: 50;
+   
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_image img{
+    height: 346px;
+     width: 460px;
+}
+
+.hero_content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tag{
+    background-color: brown;
+    padding: 5px 10px;
+    color: white;
+    align-self: flex-start;
+}
+
+.hero_content h1{
+    font-size: 68px;
+    line-height: 1.1;
+    font-weight: 400;
+}
+
+
+button{
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+
+.btn{
+    background-color: #ffc066;
+    font-size: 15px;
+    align-self: flex-start;
+}
+
+/* footer section */
+footer{
+    background-color: #fff0db;
+}
+
+.footer_container{
+     padding: 30px;
+     display: flex;
+     justify-content: space-between;
+}
+
+.footer_logo img{
+    width: 220px;
+}
+
+.link_lists h3{
+   margin-bottom: 10px;
+   color: gray;
+}
+
+.news_letter h3{
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.link_lists ul{
+    list-style: none;
+}
+
+.link_lists ul li{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.news_letter input{
+    padding: 5px 40px;
+    margin-bottom: 10px;
+}
+
+.icon_container{
+    display: flex;
+    gap: 15px;
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+#follow{
+    margin-bottom: -10px;
+}
+
+@media (max-width:786px) {
+    .hero{
+        flex-direction: column;
+    }
+    
+    .hero_image img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero_image img{
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+    .hero_content{
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .hero_content h1{
+        font-size: 32px;
+    }
+
+    .features{
+        flex-direction: column;
+    }
+}
+
+.feature img{
+    height: 80px;
+    width: 100px;
+}
+
+.features{
+    margin-top: 100px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.feature{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.feature:hover{
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.5);
+}
+.divider{
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+/* menu section */
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 50px 0;
+    align-items: center;
+}
+
+.menu .tag{
+    align-self: center;
+}
+
+.grid img{
+    height: 500px;
+    width: 500px;
+}
+
+.item-1 img{
+    height: 360px;
+    width: 370px;
+}
+
+.item-2 img{
+    height: 180px;
+    width: 180px;
+}
+
+.item-3 img{
+    height: 180px;
+    width: 180px;
+}
+
+.item-4 img{
+    height: 180px;
+    width: 180px;
+}
+
+.item-5 img{
+    height: 360px;
+    width: 180px;
+}
+
+.item-6 img{
+    height: 360px;
+    width: 180px;
+}
+
+.item-7 img{
+    height: 180px;
+    width: 180px;
+}
+
+.grid{
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+     "I1 I1 I5 I7"
+     "I1 I1 I5 I6"
+     "I2 I3 I4 I6" ;
+}
+
+.item-1{
+    grid-area: I1;
+}
+
+.item-2{
+    grid-area: I2;
+}
+
+.item-3{
+    grid-area: I3;
+}
+
+.item-4{
+    grid-area: I4;
+}
+
+.item-5{
+    grid-area: I5;
+}
+
+.item-6{
+    grid-area: I6;
+}
+
+.item-7{
+    grid-area: I7;
+}
+
+.grid-image{
+    border-radius: 10px;
+}
+
+.grid-image:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+
+}
+
+.icon img{
+    height: 20px;
+    width: 20px;
+}
