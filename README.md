@@ -7,3 +7,4 @@
 4. Developer Landing Page 
 5. Restaurant Website
 6. Music website
+7. Documentation Website
