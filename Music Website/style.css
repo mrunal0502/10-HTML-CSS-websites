@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --purple500:#281154;
+    --purple300:#270082;
+    --purple600:#1b0058;
+    --red600: #dc0000;
+    --max-width:1200px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header{
+    background-color: var(--purple300);
+    position: sticky;
+    top: 0;
+    z-index: 0;
+    box-shadow: 5px 5px 5px rgb(57,255,20,0.5);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: 15px 0;
+    z-index: 2;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.logo{
+    /* margin-left: 25px; */
+    font-size: 32px;
+    font-weight: 600;
+}
+
+nav ul li:hover{
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in;
+}
+
+nav ul li{
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in;
+}
+
+.hero-section{
+    background-image: url('project.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    color: white;
+    place-items: center;
+    text-align: center;
+}
+
+.hero-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.hero-section h1{
+    font-size: 96px;
+}
+
+.hero-section h3{
+    font-size: 32px;
+}
+
+.ipad img{
+    height: 450px;
+    width: 650px;
+    overflow: hidden;
+    position: relative;
+}
+
+.music-section{
+    padding-top: 50px;
+    background-color: var(--purple500);
+}
+
+.music-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.ipad{
+    margin-top: -400px;
+    position: relative;
+    top: 400px;
+    overflow: hidden;
+}
+
+button{
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover{
+    transition: 0.2s ease-in-out;
+    opacity: 0.8;
+
+}
+
+.primary-btn{
+    background-color: var(--red600);
+    color: white;
+}
+
+.secondary-btn{
+    background-color: var(--purple300);
+    color: white;
+}
+
+.about-music img{
+    height: 450px;
+    width: 650px;
+ 
+}
+
+/* .about-music h4{
+    padding-left: 10px;
+} */
+
+.about-music{
+    padding-top: 500px;
+    display: grid;
+    place-items: center;
+    gap: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
