@@ -1,0 +1,36 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    background: black;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    color: white;
+}
+
+.spinner{
+    width: 10em;
+    height: 10em;
+    border-top: 1em solid #1AFF00;
+    border-right: 1em solid transparent;
+    border-radius: 50%;
+    margin: auto;
+    animation: spinner 2s linear infinite;
+
+}
+
+.circle{
+    width: 1em;
+    height: 1em;
+    background-color: #1AFF00;
+    border-radius: 50%;
+    margin-left: 8.5em;
+    margin-top: 0.5em;
+}
+
+@keyframes spinner {
+    100%{
+        transform: rotate(360deg);
+    }
+}
